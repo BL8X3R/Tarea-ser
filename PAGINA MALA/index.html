@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contador interactivo de clicks con felicitación cada 5 clicks.">
+  <title>Reto de 5 Clicks</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="card" aria-labelledby="title">
+      <h1 id="title">🎯 Reto de 5 Clicks</h1>
+      <p class="subtitle">Haz click en el botón y recibe una felicitación cada 5 clicks.</p>
+
+      <div class="counter" aria-live="polite">
+        <span id="clickCount">0</span>
+        <small>clicks</small>
+      </div>
+
+      <button id="clickButton" class="click-button" type="button">
+        ¡Haz click!
+      </button>
+
+      <div id="message" class="message" role="status" aria-live="polite"></div>
+
+      <button id="resetButton" class="reset-button" type="button">
+        Reiniciar
+      </button>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
